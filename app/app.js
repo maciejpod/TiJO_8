@@ -16,11 +16,11 @@ function returnOnlyLetter(str)
     var az = /^[a-z]/;
     var outputArray = [];
     var x = temp.length;
-    for (var i = 0; i <= x; i++) {
-        if (az.test(temp[i])) { //sprawdza czy kolejne znaki znajduja sie w przedziale "az"
-            outputArray.push(temp[i]);
+    temp.forEach(function (item) {
+        if(az.test(item)) {
+            outputArray.push(item);
         }
-    }
+    })
     return outputArray.join("");
 }
 
