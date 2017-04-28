@@ -1,0 +1,83 @@
+Creating 4 test runners (based on CPU count)
+Mutation testing  [] 100% (ETC 0.0s)[14 killed] [7 survived] [0 no coverage] [1 timeout] [0 error]
+
+Mutant survived!
+/home/maciej/Pulpit/TiJO_8/app/app.js: line 3:8
+Mutator: RemoveConditionals
+-       if (isNaN(num)) {
++       if (false) {
+
+Tests ran:
+    reverseNumber should return string with reversed numbers
+
+Mutant survived!
+/home/maciej/Pulpit/TiJO_8/app/app.js: line 3:20
+Mutator: BlockStatement
+-       if (isNaN(num)) {
+-           return false;
+-       }
++       if (isNaN(num)) {
++   }
+
+Tests ran:
+    reverseNumber should return string with reversed numbers
+
+Mutant survived!
+/home/maciej/Pulpit/TiJO_8/app/app.js: line 12:33
+Mutator: BlockStatement
+-       if (typeof str !== 'string') {
+-           return false;
+-       }
++       if (typeof str !== 'string') {
++   }
+
+Tests ran:
+    returnOnlyLetter should return string which conatins only letters
+
+Mutant survived!
+/home/maciej/Pulpit/TiJO_8/app/app.js: line 12:8
+Mutator: RemoveConditionals
+-       if (typeof str !== 'string') {
++       if (false) {
+
+Tests ran:
+    returnOnlyLetter should return string which conatins only letters
+
+Mutant survived!
+/home/maciej/Pulpit/TiJO_8/app/app.js: line 19:20
+Mutator: BinaryOperator
+-       for (var i = 0; i <= x; i++) {
++       for (var i = 0; i < x; i++) {
+
+Tests ran:
+    returnOnlyLetter should return string which conatins only letters
+
+Mutant survived!
+/home/maciej/Pulpit/TiJO_8/app/app.js: line 30:8
+Mutator: RemoveConditionals
+-       if (pattern.test(email)) {
++       if (false) {
+
+Tests ran:
+    isEmail should return false for non email string
+
+Mutant survived!
+/home/maciej/Pulpit/TiJO_8/app/app.js: line 30:29
+Mutator: BlockStatement
+-       if (pattern.test(email)) {
+-           return true;
+-       } else {
++       if (pattern.test(email)) {
++   } else {
+
+Tests ran:
+    isEmail should return false for non email string
+
+22 total mutants.
+7 mutants survived.
+1 mutants timed out.
+14 mutants killed.
+Ran 1.09 tests per mutant on average.
+Mutation score based on covered code: 68.18%
+Mutation score based on all code: 68.18%
+[2017-04-28 08:31:10.839] [INFO] Stryker - Done in 8 seconds.
